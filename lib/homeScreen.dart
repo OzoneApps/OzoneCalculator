@@ -568,25 +568,10 @@ class _HomeScreenState extends State<HomeScreen> {
       Parser p = new Parser();
       ContextModel cm = new ContextModel();
       Expression exp = p.parse(input);
-      int precision;
-      if (exp.evaluate(EvaluationType.REAL, cm).toString().length > 10) {
-        precision =
-            exp.evaluate(EvaluationType.REAL, cm).toString().length - 10;
-        setState(() {
-          textControllerResult.text = exp
-              .evaluate(EvaluationType.REAL, cm)
-              .toString()
-              .substring(
-                  0,
-                  exp.evaluate(EvaluationType.REAL, cm).toString().length -
-                      precision);
-        });
-      } else {
         setState(() {
           textControllerResult.text =
               exp.evaluate(EvaluationType.REAL, cm).toString();
         });
-      }
     } else {
       textControllerResult.text = "";
     }
