@@ -3,7 +3,7 @@
 [![Made with Flutter](https://img.shields.io/badge/Made_with-Flutter-blue.svg)](https://flutter.dev/)
 
 # Ozone Calculator
-<p align="center"> <img width="250" height="250" src="https://github.com/devabhixda/OzoneCalculator/blob/master/icon.png">  </p>
+<p align="center"> <img width="250" height="250" src="https://github.com/OzoneApps/OzoneCalculator/blob/master/icon.png">  </p>
 
 A calculator app written with flutter framework, developed as a part of OzoneApps ecosystem.
 
